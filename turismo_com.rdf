@@ -1,0 +1,1659 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#"
+     xml:base="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:practica-vocabulario-1="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#compran -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#compran">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#esvendidoA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destino -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destino">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#esvendidoA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#esvendidoA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#genero -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#genero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrece">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrecidoPor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceActividad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceActividad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrece"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceHospedaje -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceHospedaje">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrece"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceTransporte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofreceTransporte">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrece"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrecidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ofrecidoPor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tiene">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneAeropuerto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneAeropuerto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstacionTren -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstacionTren">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tiene"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstaciónTren -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstaciónTren">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tienePuerto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tienePuerto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneTerminal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneTerminal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnCiudad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnCiudad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnMontaña -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnMontaña">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnPlaya -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEnPlaya">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ubicadoEn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vende">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vendidoPor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vendidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vendidoPor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#viajaCon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#viajaCon">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#capacidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#capacidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#edad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#precio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneAeropuerto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneAeropuerto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstacionTren -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstacionTren"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneEstación"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneNombre">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tienePuerto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tienePuerto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneTerminal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tieneTerminal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vendidoEnMes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#vendidoEnMes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad">
+        <rdfs:comment xml:lang="es">Actividad que el guesped puede hacer en las instalaciones</rdfs:comment>
+        <rdfs:comment xml:lang="en">Activities that the guest can do on the premises</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadCultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadCultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeEntretenimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeEntretenimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeportiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeportiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Actividad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo">
+        <rdfs:comment xml:lang="en">Company that sells and organizes trips, as well as other tourist services.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Empresa que se encarga de vender y organizar viajes, así como otros servicios turísticos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento">
+        <rdfs:comment xml:lang="en">A temporary place to stay</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar donde una persona o un grupo de personas se alojan, pernoctan o acampan</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AutoBus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AutoBus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Avion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Avion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescNiños -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescNiños">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Descuento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescPorTemporada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescPorTemporada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Descuento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescTerceraEdad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescTerceraEdad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Descuento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Descuento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Descuento">
+        <rdfs:comment xml:lang="es">Descuentos aplicados a los turistas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Offers applied to the turists</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoCultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoCultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeEntretenimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeEntretenimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeportivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico">
+        <rdfs:comment xml:lang="en">Kind of the turist destiny</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tipo de destino turístico</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Femenino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Femenino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Genero"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Masculino"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Genero">
+        <rdfs:comment xml:lang="es">Genero del turista</rdfs:comment>
+        <rdfs:comment xml:lang="en">Turist gender</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#HotelDeLujo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#HotelDeLujo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#HotelEconómico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#HotelEconómico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#HotelEconómico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Lancha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Lancha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Masculino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Masculino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Genero"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteCultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteCultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeEntretenimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeEntretenimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeportivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico">
+        <rdfs:comment xml:lang="es">Tipo de paquete turístico que se oferta al turista</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of tourist package offered to tourists</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Alojamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte">
+        <rdfs:comment xml:lang="es">Tipo de transporte en donde se movilizará el turista.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of transport in which the tourist will travel.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Tren -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Tren">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista">
+        <rdfs:comment xml:lang="en">Kind of turist filtered by age.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tipo de turista según la edad</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaAdulto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaAdulto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMayorDeEdad"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaAdultoMayor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaAdultoMayor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaAdultoMayor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMayorDeEdad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMayorDeEdad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMayorDeEdad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMenorDeEdad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMenorDeEdad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#TuristaMenorDeEdad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ubicación">
+        <rdfs:comment xml:lang="es">Lugar en donde se encuentra el destino</rdfs:comment>
+        <rdfs:comment xml:lang="en">Place where the destiny is located.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadCultural"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Visitar museos y galerías de arte&quot;</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadCultural"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recorrer sitios históricos</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadCultural"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probar la comida local</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeEntretenimiento"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paquetes temáticos y atracciones</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeEntretenimiento"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discotecas y vida nocturna</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeEntretenimiento"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Espectáculos en vivo</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeportiva"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Senderismo y Trekking</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeportiva"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deportes acuáticos</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ActividadDeportiva"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deportes de equipos o individuales</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo"/>
+        <vende rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sol Caribe</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo"/>
+        <vende rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Travel Time Ecuador</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#agencia3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AgenciaTurismo"/>
+        <vende rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cite Tour</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#autobus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#autobus1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AutoBus"/>
+        <capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</capacidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#avion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#avion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Avion"/>
+        <capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">130</capacidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad"/>
+        <tieneAeropuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneAeropuerto>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuenca</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad"/>
+        <tieneAeropuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneAeropuerto>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quito</tieneNombre>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad"/>
+        <tieneEstacionTren rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneEstacionTren>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alausí</tieneNombre>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#desNiños -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#desNiños">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescNiños"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#descPorTemporada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#descPorTemporada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescPorTemporada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#descTerceraEdad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#descTerceraEdad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescTerceraEdad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Museo Pumapungo</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ubicadoEnPlaya rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Playa Los Frailes</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnMontaña rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montaña</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnMontaña rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pesca Deportiva Cajas</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ubicadoEnMontaña rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sendero Quishuar</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnPlaya rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kayak Archidona</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnPlaya rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parapente Olón</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitad del Mundo</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural2"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monumento a la Libertad</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HideOut Disco Club</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casino S.A</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estación de Ferrocarril Alausí</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuenca Tenis y Golf Club</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quito Tenis y Golf Club</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoTuristico"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ubicadoEnCiudad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Senderismo Nariz del Diablo</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Femenino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña1"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El sendero</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña2"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Llullu Llama Mountain Lodge</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#glamping3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva1"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña3"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secret Garden</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four Points by Sheraton Cuenca</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad1"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#int">37</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selina Cuenca</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural1"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.5</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wydham Garden</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad2"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">22.0</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel David</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">89.0</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel Europa</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#hotel6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#ciudad3"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.0</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel Las Americas</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#lancha1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#lancha1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Lancha"/>
+        <capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</capacidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Masculino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El Cajas</tieneNombre>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quilotoa</tieneNombre>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#montaña3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volcán Cotopaxi</tieneNombre>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico1"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico2"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico3"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista5"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">350.0</precio>
+        <vendidoEnMes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</vendidoEnMes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico4"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico5"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico6"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista1"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.5</precio>
+        <vendidoEnMes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</vendidoEnMes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico7"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico8"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico9"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista7"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">275.3</precio>
+        <vendidoEnMes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</vendidoEnMes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico10"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico14"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico15"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista2"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">240.0</precio>
+        <vendidoEnMes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</vendidoEnMes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico11"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico12"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico13"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista6"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">500.0</precio>
+        <vendidoEnMes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</vendidoEnMes>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#paqueteTuristico6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteTuristico"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico1"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico14"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico15"/>
+        <destino rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#destinoTuristico4"/>
+        <esvendidoA rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista5"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">650.0</precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa"/>
+        <tieneAeropuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneAeropuerto>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chichipe</tieneNombre>
+        <tienePuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tienePuerto>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa"/>
+        <tieneAeropuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneAeropuerto>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Cristobal</tieneNombre>
+        <tienePuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tienePuerto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa"/>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montañita</tieneNombre>
+        <tienePuerto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tienePuerto>
+        <tieneTerminal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</tieneTerminal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa1"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.0</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casablanca Chichipe</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa2"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">127.5</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Playa Mann</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#resort3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadCultural3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeEntretenimiento3"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva2"/>
+        <ofreceActividad rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#actividadDeportiva3"/>
+        <ubicadoEn rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#playa3"/>
+        <precio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">98.5</precio>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montañita States</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tren1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#tren1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Tren"/>
+        <capacidad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">450</capacidad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista10"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista11"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista8"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mateo</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">23</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carolina</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriela</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicolas</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beatriz</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luis</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlos</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista15"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista16"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista17"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">24</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastian</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">68</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ismael</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista13"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista14"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista3"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mauricio</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista9"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Innesa</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#femenino"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista12"/>
+        <viajaCon rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista4"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cenaida</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andres</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#turista9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Turista"/>
+        <genero rdf:resource="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#masculino"/>
+        <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</edad>
+        <tieneNombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andres</tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#AutoBus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Avion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Lancha"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Tren"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Ciudad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Montaña"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Playa"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescNiños"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescPorTemporada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DescTerceraEdad"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoCultural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeEntretenimiento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#DestinoDeportivo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Glamping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Hotel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#Resort"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteCultural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeEntretenimiento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/juanj/ontologies/2025/2/practica-vocabulario-1#PaqueteDeportivo"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
